@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | PureSweep Cleaning</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">Pure<span>Sweep</span> Cleaning</a>
+    <nav class="nav-links">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="services.html" data-i18n="nav.services">Services</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="contact.html" class="active" data-i18n="nav.contact">Contact</a>
+      <a href="contact.html" class="nav-cta" data-i18n="nav.cta">Get a Quote</a>
+      <button id="lang-toggle" class="btn-lang" type="button">中文</button>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow" data-i18n="contact.eyebrow">Contact</span>
+    <h1 data-i18n="contact.h1">Tell us what you need</h1>
+    <p style="max-width:56ch; color:#3a4d40;" data-i18n="contact.lede">Fill out the form below, or reach us directly by phone or email — we'll get back to you soon.</p>
+  </div>
+</section>
+
+<div class="wipe"></div>
+
+<section class="section">
+  <div class="wrap grid-2">
+    <div>
+      <h2 data-i18n="contact.info.h2">Contact Details</h2>
+      <div class="info-row">
+        <div class="icon">☎</div>
+        <div><h3 style="margin-bottom:4px;" data-i18n="contact.info.phoneTitle">Phone</h3><p style="margin:0;" data-i18n="contact.info.phoneValue">[Phone number]</p></div>
+      </div>
+      <div class="info-row">
+        <div class="icon">✉</div>
+        <div><h3 style="margin-bottom:4px;" data-i18n="contact.info.emailTitle">Email</h3><p style="margin:0;" data-i18n="contact.info.emailValue">[Email address]</p></div>
+      </div>
+      <div class="info-row">
+        <div class="icon">📍</div>
+        <div><h3 style="margin-bottom:4px;" data-i18n="contact.info.areaTitle">Service Area</h3><p style="margin:0;" data-i18n="contact.info.areaValue">Sydney & surrounding suburbs [add specific areas]</p></div>
+      </div>
+      <div class="info-row">
+        <div class="icon">🕐</div>
+        <div><h3 style="margin-bottom:4px;" data-i18n="contact.info.hoursTitle">Business Hours</h3><p style="margin:0;" data-i18n="contact.info.hoursValue">Mon–Sat [add specific hours]</p></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <form id="contact-form">
+        <div class="form-field">
+          <label for="name" data-i18n="contact.form.name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-field">
+          <label for="phone" data-i18n="contact.form.phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-field">
+          <label for="email" data-i18n="contact.form.email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="form-field">
+          <label for="service" data-i18n="contact.form.service">Service you're interested in</label>
+          <select id="service" name="service">
+            <option data-i18n="contact.form.serviceOpt1">Residential Cleaning</option>
+            <option data-i18n="contact.form.serviceOpt2">Office Cleaning</option>
+            <option data-i18n="contact.form.serviceOpt3">Deep / Move Cleaning</option>
+            <option data-i18n="contact.form.serviceOpt4">Other</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="message" data-i18n="contact.form.message">Message</label>
+          <textarea id="message" name="message" data-i18n-placeholder="contact.form.messagePlaceholder" placeholder="Briefly describe what you need — e.g. home size, preferred timing."></textarea>
+        </div>
+        <button type="submit" class="btn btn--gold" style="width:100%;" data-i18n="contact.form.submit">Submit</button>
+        <p class="form-note" data-i18n="contact.form.note">* This form is for demo purposes only and isn't connected to anything yet. Before going live, connect it to an email service (like Formspree) to actually receive messages.</p>
+      </form>
+      <div id="form-confirm" style="display:none; text-align:center; padding:20px 0;">
+        <h3 data-i18n="contact.form.confirmTitle">Thanks for reaching out!</h3>
+        <p data-i18n="contact.form.confirmDesc">We'll be in touch soon. (This is a demo — the form isn't actually connected yet.)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="color:#fff; margin-bottom:10px;">Pure<span>Sweep</span> Cleaning</div>
+        <p style="color:#9fb2a3;" data-i18n="footer.tagline">Sydney's trusted local cleaning service, thorough and reliable.</p>
+      </div>
+      <div>
+        <h4 data-i18n="footer.quicklinksTitle">Quick Links</h4>
+        <ul>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.contactTitle">Contact</h4>
+        <ul>
+          <li><span data-i18n="footer.phoneLabel">Phone:</span> <span data-i18n="footer.phoneValue">[Phone number]</span></li>
+          <li><span data-i18n="footer.emailLabel">Email:</span> <span data-i18n="footer.emailValue">[Email address]</span></li>
+          <li><span data-i18n="footer.areaLabel">Service area:</span> <span data-i18n="footer.areaValue">Sydney & surrounding suburbs</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer.rights">© 2026 PureSweep Cleaning. All rights reserved.</span>
+      <span data-i18n="footer.abn">ABN [pending]</span>
+    </div>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
